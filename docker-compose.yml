@@ -56,14 +56,14 @@ services:
         ports:
           - 8001:80
 
-    # nginx:
-    #   container_name: angular_nginx
-    #   build: .docker/nginx
-    #   volumes:
-    #     - ${ANGULAR_APP}/dist/Angular-project:/usr/share/nginx/html
-    #   ports:
-    #     - "81:80"
-    #     - "443:443"
+    nginx:
+      container_name: angular_nginx
+      build: .docker/nginx
+      volumes:
+        - ${ANGULAR_APP}/dist/Angular-project:/usr/share/nginx/html
+      ports:
+        - "81:80"
+        - "443:443"
 
     node:
         build: .docker/node
