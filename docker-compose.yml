@@ -60,7 +60,7 @@ services:
       container_name: angular_nginx
       build: .docker/nginx
       volumes:
-        - ${ANGULAR_APP}/dist/Angular-project:/usr/share/nginx/html
+        - ${ANGULAR_APP}/dist/portfolio_front:/usr/share/nginx/html
       ports:
         - "81:80"
         - "443:443"
