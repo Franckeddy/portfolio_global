@@ -13,8 +13,11 @@ run:
 
 rerun: rebuild run
 
-compose: clean
+compose-d: clean
 	docker-compose up --build -d
+
+compose:
+	docker-compose up --build
 
 bash-app:
 	docker-compose exec app sh
