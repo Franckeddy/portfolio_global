@@ -77,7 +77,7 @@ For correct work with angular app you must fix `package.json`
     ....
 ```
 
-Access to projects
+Access to Url's
 ------------------
 Symfony: http://localhost:82
 
