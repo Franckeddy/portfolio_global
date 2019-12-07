@@ -1,4 +1,4 @@
-FROM php:7.2.3-fpm
+FROM php:7.3-fpm
 
 LABEL author="Franck GARCON" 
 RUN apt-get update \
