@@ -1,5 +1,8 @@
 path = docker
 
+start:
+	docker-compose build && docker-compose up
+
 clean:
 	docker system prune -a -f
 
